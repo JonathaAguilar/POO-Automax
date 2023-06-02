@@ -1,4 +1,4 @@
- package modelo;
+package modelo;
 
 public class Cotizacion {
     String folio, des;
