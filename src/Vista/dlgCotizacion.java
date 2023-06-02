@@ -46,6 +46,7 @@ public class dlgCotizacion extends javax.swing.JDialog {
         jLabel8 = new javax.swing.JLabel();
         btnCancelar = new javax.swing.JButton();
         txtCalcularTotal = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -53,27 +54,27 @@ public class dlgCotizacion extends javax.swing.JDialog {
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel1.setText("Folio");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(50, 14, 28, 15);
+        jLabel1.setBounds(50, 40, 28, 15);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel2.setText("Descripcion");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(50, 40, 69, 15);
+        jLabel2.setBounds(50, 70, 69, 15);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel3.setText("Precio");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(50, 67, 37, 15);
+        jLabel3.setBounds(50, 100, 37, 15);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel4.setText("Por. Pago Inicial");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(49, 94, 120, 15);
+        jLabel4.setBounds(50, 120, 120, 15);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel5.setText("Plazo");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(49, 120, 32, 15);
+        jLabel5.setBounds(50, 150, 32, 15);
 
         txtFolio.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         txtFolio.setForeground(new java.awt.Color(0, 0, 153));
@@ -84,25 +85,25 @@ public class dlgCotizacion extends javax.swing.JDialog {
             }
         });
         getContentPane().add(txtFolio);
-        txtFolio.setBounds(168, 11, 66, 21);
+        txtFolio.setBounds(170, 40, 66, 21);
 
         txtDescripcion.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         txtDescripcion.setForeground(new java.awt.Color(0, 0, 153));
         txtDescripcion.setEnabled(false);
         getContentPane().add(txtDescripcion);
-        txtDescripcion.setBounds(168, 40, 66, 21);
+        txtDescripcion.setBounds(170, 70, 66, 21);
 
         txtPagoI.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         txtPagoI.setForeground(new java.awt.Color(0, 0, 153));
         txtPagoI.setEnabled(false);
         getContentPane().add(txtPagoI);
-        txtPagoI.setBounds(168, 94, 66, 20);
+        txtPagoI.setBounds(170, 120, 66, 20);
 
         txtPrecio.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         txtPrecio.setForeground(new java.awt.Color(0, 0, 153));
         txtPrecio.setEnabled(false);
         getContentPane().add(txtPrecio);
-        txtPrecio.setBounds(168, 67, 66, 21);
+        txtPrecio.setBounds(170, 100, 66, 21);
 
         cmbPlazo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "12", "24", "36", "48" }));
         cmbPlazo.setEnabled(false);
@@ -112,7 +113,7 @@ public class dlgCotizacion extends javax.swing.JDialog {
             }
         });
         getContentPane().add(cmbPlazo);
-        cmbPlazo.setBounds(168, 120, 90, 20);
+        cmbPlazo.setBounds(170, 150, 90, 20);
 
         btnNuevo.setText("Nuevo");
         btnNuevo.addActionListener(new java.awt.event.ActionListener() {
@@ -121,17 +122,17 @@ public class dlgCotizacion extends javax.swing.JDialog {
             }
         });
         getContentPane().add(btnNuevo);
-        btnNuevo.setBounds(290, 10, 90, 23);
+        btnNuevo.setBounds(290, 40, 90, 23);
 
         btnGuardar.setText("Guardar");
         btnGuardar.setEnabled(false);
         getContentPane().add(btnGuardar);
-        btnGuardar.setBounds(290, 50, 90, 23);
+        btnGuardar.setBounds(290, 80, 90, 23);
 
         btnMostrar.setText("Mostrar");
         btnMostrar.setEnabled(false);
         getContentPane().add(btnMostrar);
-        btnMostrar.setBounds(290, 90, 90, 23);
+        btnMostrar.setBounds(290, 120, 90, 23);
 
         jPanel1.setBackground(new java.awt.Color(204, 204, 204));
         jPanel1.setLayout(null);
@@ -190,7 +191,12 @@ public class dlgCotizacion extends javax.swing.JDialog {
         txtCalcularTotal.setBounds(140, 70, 66, 21);
 
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(20, 180, 370, 160);
+        jPanel1.setBounds(20, 210, 370, 160);
+
+        jLabel9.setFont(new java.awt.Font("Tahoma", 3, 18)); // NOI18N
+        jLabel9.setText("AUTOMAX");
+        getContentPane().add(jLabel9);
+        jLabel9.setBounds(20, 0, 90, 22);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -265,6 +271,7 @@ public class dlgCotizacion extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     public javax.swing.JTextField txtCalcularPaI;
     public javax.swing.JTextField txtCalcularPaM;
